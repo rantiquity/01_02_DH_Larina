@@ -18,7 +18,7 @@ my_data <- works |>
 # Удалите столбец name
 my_data2 <- my_data |>
   # ваш код здесь
-  separate(author, into=c('author', 'name'), sep = ',') |>
+  separate(author, into = c('author', 'name'), sep = ',') |>
   select(-name)
 
 # (3) Используйте group_by() и summarise(), чтобы узнать,
